@@ -1264,9 +1264,9 @@
             "source": "RBMM",
             "page": 0,
             "prerequisite": [{
-                "other": [{
-                    "name": "sneak attack"
-                }]
+                "feature": [
+                    "sneak attack"
+                ]
             }],
             "entries": [
                 "You are uncommonly nimble for your race. You gain the following benefits:",
