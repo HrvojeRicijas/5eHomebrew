@@ -194,6 +194,122 @@
         },
 
         {
+            "name": "Telekinetic",
+            "source": "RBMM",
+            "page": 0,
+            "additionalSpells": [{
+                "known": {
+                    "_": [
+                        "mage hand#c"
+                    ]
+                }
+            }],
+            "entries": [
+                "You learn to move things with your mind, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Chose Intelligence, Wisdom or Charisma.",
+                        "You learn the {@spell mage hand} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability chosen by this feat.",
+                        "As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score chosen by this feat) or be moved 5 feet toward you or away from you. A creature can willingly fail this save."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Telepathic",
+            "source": "RBMM",
+            "page": 0,
+            "additionalSpells": [{
+                "ability": "inherit",
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1": [
+                                "detect thoughts"
+                            ]
+                        }
+                    }
+                }
+            }],
+            "entries": [
+                "You awaken the ability to mentally connect with others, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose Intelligence, Wisdom, or Charisma.",
+                        "You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.",
+                        "You can cast the {@spell detect thoughts} spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability chosen by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "War Caster",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "spellcasting": true
+            }],
+            "entries": [
+                "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.",
+                        "You can perform the somatic components of spells even when you have weapons or a {@item shield|phb} in one or both hands.",
+                        "When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Weapon Master",
+            "source": "RBMM",
+            "page": 0,
+            "weaponProficiencies": [{
+                "choose": {
+                    "fromFilter": "type=martial weapon;mundane weapon|miscellaneous=mundane",
+                    "count": 4
+                }
+            }],
+            "entries": [
+                "You have practiced extensively with a variety of weapons, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon.",
+                        "You gain proficiency with shields."
+                    ]
+                }
+            ]
+        },
+
+
+        {
+            "name": "Battlemage",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "spellcasting": true
+            }],
+            "entries": [
+                "You are trained in casting spells while fighting close to an enemy. You gain the following benefits:",
+                {
+
+                    "type": "list",
+                    "items": [
+                        "You no longer have disadvantage due to making a ranged spell attack while adjacent to an enemy.",
+                        "You may use a weapon you are wielding as a spellcasting focus."
+                    ]
+                }
+            ]
+        },
+
+        {
             "name": "All Out Attack",
             "source": "RBMM",
             "page": 0,
