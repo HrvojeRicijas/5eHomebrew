@@ -194,6 +194,61 @@
         },
 
         {
+            "name": "All Out Attack",
+            "source": "RBMM",
+            "page": 0,
+
+            "entries": [
+                "You fight with reckless abandon, caring little for your own safety. You may die one day – but that day will come sooner to your enemies.",
+                {
+
+                    "type": "list",
+                    "items": [
+                        "At the end of your turn you can enter a stance prepared for striking at anyone who comes near. You can subtract your proficiency bonus from your AC until the start of your next turn. When a creature within your reach hits you with a melee attack, you may use your reaction to make an attack against that creature."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Bulwark",
+            "source": "RBMM",
+            "page": 0,
+
+            "entries": [
+                "Standing still, feet on the ground, your defenses become impenetrable.",
+                {
+
+                    "type": "list",
+                    "items": [
+                        "At the start of your turn, you can reduce your speed to 0. If you do so you can use your reaction to impose disadvantage on a melee attack made against you before the start of your next turn.",
+                        "When an effect causes you to move without expending your movement, you can reduce the movement by 5ft"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Deadly Cunning",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "other": [{
+                    "name": "sneak attack"
+                }]
+            }],
+            "entries": [
+                "You are uncommonly nimble for your race. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When casting a cantrip that requires an attack roll and causes damage to a single target, or when you make an unarmed or improvised weapon attack, if you have advantage, you can add your Sneak Attack damage as if you were wielding a finesse or ranged weapon."
+                    ]
+                }
+            ]
+        },
+
+        {
             "name": "Demolitionist",
             "source": "RBMM",
             "page": 0,
@@ -204,9 +259,9 @@
 
                     "type": "list",
                     "items": [
-                        "You gain proficiency with the {@weapon net}, {@weapon trident}, {@weapon flail}, {@weapon morningstar}, {@weapon scimitar}, {@weapon whip}, and{@armor shield}",
-                        "When making an attack with the {@weapon net}, you dont have Disadvantage from using the Net's long range.",
-                        "When making a ranged attack against a target within 5ft of you, you don't get Disadvantage from attacking with an enemy in melee."
+                        "You get advantge when making attacks against an object.",
+                        "When making an attack against an object or construct, your attack critically strike on rolls of 19 or 20 and ignore half of the damage resistance the target has.",
+                        "You have advantage on saving throws and ability check to avoid falling rubble or collapsing ground."
                     ]
                 }
             ]
