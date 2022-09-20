@@ -1,31 +1,27 @@
 {
     "_meta": {
-        "sources": [
-            {
-                "json": "RBMM",
-                "abbreviation": "RBMM",
-                "full": "Rici's Book of Magical Magic",
-                "authors": [
-                    "Ricij"
-                ],
-                "convertedBy": [
-                    "Gabij"
-                ],
-                "version": "1.0",
-                "url": "www.google.com",
-                "targetSchema": "1.0"
-            }
-        ],
+        "sources": [{
+            "json": "RBMM",
+            "abbreviation": "RBMM",
+            "full": "Rici's Book of Magical Magic",
+            "authors": [
+                "Ricij"
+            ],
+            "convertedBy": [
+                "Gabij"
+            ],
+            "version": "1.0",
+            "url": "www.google.com",
+            "targetSchema": "1.0"
+        }],
         "dateAdded": 1663497984,
         "dateLastModified": 1663497984
     },
-    "feat": [
-        {
+    "feat": [{
             "name": "Aberrant Dragonmark",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
+            "otherSources": [{
                     "source": "UAWGE",
                     "page": 112
                 },
@@ -34,34 +30,26 @@
                     "page": 52
                 }
             ],
-            "prerequisite": [
-                {
-                    "other": "No other dragonmark"
-                }
-            ],
-            "additionalSpells": [
-                {
-                    "ability": "con",
-                    "innate": {
-                        "_": {
-                            "rest": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Sorcerer"
-                                    }
-                                ]
-                            }
+            "prerequisite": [{
+                "other": "No other dragonmark"
+            }],
+            "additionalSpells": [{
+                "ability": "con",
+                "innate": {
+                    "_": {
+                        "rest": {
+                            "1": [{
+                                "choose": "level=1|class=Sorcerer"
+                            }]
                         }
-                    },
-                    "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Sorcerer"
-                            }
-                        ]
                     }
+                },
+                "known": {
+                    "_": [{
+                        "choose": "level=0|class=Sorcerer"
+                    }]
                 }
-            ],
+            }],
             "entries": [
                 "You have manifested an aberrant dragonmark. Determine its appearance and the flaw associated with it. You gain the following benefits:",
                 {
@@ -124,12 +112,10 @@
             "name": "Actor",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source": "PHB",
-                    "page": 165
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 165
+            }],
             "entries": [
                 "Skilled at mimicry and dramatics, you gain the following benefits:",
                 {
@@ -146,12 +132,10 @@
             "name": "Alert",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source": "PHB",
-                    "page": 165
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 165
+            }],
             "entries": [
                 "Always on the lookout for danger, you gain the following benefits:",
                 {
@@ -168,32 +152,30 @@
             "name": "Arcane Acolyte",
             "source": "RBMM",
             "page": 0,
-            "additionalSpells": [
-                {
-                    "ability": {
-                        "choose": {
-                            "from": [
-                                "int",
-                                "wis",
-                                "cha"
+            "additionalSpells": [{
+                "ability": {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                },
+                "innate": {
+                    "_": {
+                        "will": [
+                            "detect magic"
+                        ],
+                        "daily": {
+                            "1e": [
+                                "identify",
+                                "dispel magic"
                             ]
-                        }
-                    },
-                    "innate": {
-                        "_": {
-                            "will": [
-                                "detect magic"
-                            ],
-                            "daily": {
-                                "1e": [
-                                    "identify",
-                                    "dispel magic"
-                                ]
-                            }
                         }
                     }
                 }
-            ],
+            }],
             "entries": [
                 "You learn more of the magic arcane scholars focus on. You learn the {@spell detect magic} spell and can cast it up to your proficiency bonus number of times, without expending a spell slot. You also learn {@spell identify} and {@spell dispel magic}, each of which you can cast once without expending a spell slot. You regain the ability to cast those spells in this way when you finish a long rest. Chose the casting stat for those spells from Intelligence, Wisdom and Charisma."
             ]
@@ -202,47 +184,37 @@
             "name": "Artificer Initiate",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source": "TCE",
-                    "page": 79
-                }
-            ],
-            "toolProficiencies": [
-                {
-                    "anyArtisansTool": true
-                }
-            ],
-            "additionalSpells": [
-                {
-                    "ability": {
-                        "choose": {
-                            "from": [
-                                "int",
-                                "cha"
-                            ]
-                        }
-                    },
-                    "innate": {
-                        "_": {
-                            "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Artificer"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Artificer"
-                            }
+            "otherSources": [{
+                "source": "TCE",
+                "page": 79
+            }],
+            "toolProficiencies": [{
+                "anyArtisansTool": true
+            }],
+            "additionalSpells": [{
+                "ability": {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "cha"
                         ]
                     }
+                },
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1": [{
+                                "choose": "level=1|class=Artificer"
+                            }]
+                        }
+                    }
+                },
+                "known": {
+                    "_": [{
+                        "choose": "level=0|class=Artificer"
+                    }]
                 }
-            ],
+            }],
             "entries": [
                 "You've learned some of an artificer's inventiveness:",
                 {
@@ -259,12 +231,10 @@
             "name": "Athlete",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source": "PHB",
-                    "page": 165
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 165
+            }],
             "entries": [
                 "You have undergone extensive physical training to gain the following benefits:",
                 {
@@ -280,17 +250,13 @@
         },
         {
             "name": "Bountiful Luck",
-            "source": "XGE",
+            "source": "RBMM",
             "page": 73,
-            "prerequisite": [
-                {
-                    "race": [
-                        {
-                            "name": "halfling"
-                        }
-                    ]
-                }
-            ],
+            "prerequisite": [{
+                "race": [{
+                    "name": "halfling"
+                }]
+            }],
             "entries": [
                 "Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You're not sure how you do it; you just wish it, and it happens. Surely a sign of fortune's favor!",
                 "When an ally you can see within 20 feet of you rolls a 1 on the {@dice d20} for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.",
@@ -301,12 +267,10 @@
             "name": "Charger",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source": "PHB",
-                    "page": 165
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 165
+            }],
             "entries": [
                 "When you use your action to {@action Dash}, you can use a bonus action to make one melee weapon attack or to {@action shove} a creature.",
                 "If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)."
@@ -316,11 +280,9 @@
             "name": "Chef",
             "source": "RBMM",
             "page": 0,
-            "prerequisite": [
-                {
-                    "other": "Proficiency with {@item cook's utensils|phb}"
-                }
-            ],
+            "prerequisite": [{
+                "other": "Proficiency with {@item cook's utensils|phb}"
+            }],
             "entries": [
                 "Time and effort spent mastering the culinary arts has paid off. You gain the following benefits:",
                 {
@@ -332,6 +294,204 @@
                 }
             ]
         },
+
+        {
+            "name": "Second Chance",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "Fortune favors you when someone tries to strike you. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't use it again until you roll initiative at the start of combat or until you finish a short or long rest."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Sentinel",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.",
+                        "Creatures provoke opportunity attacks from you even if they take the {@action Disengage} action before leaving your reach.",
+                        "When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Shadow Touched",
+            "source": "RBMM",
+            "page": 0,
+
+            "additionalSpells": [{
+                "ability": "inherit",
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1e": [
+                                "invisibility",
+                                {
+                                    "choose": "level=1|school=I;N"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }],
+            "entries": [
+                "Your exposure to the Shadowfell's magic has changed you, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You learn the {@spell invisibility} spell and one {@filter 1st-level spell|spells|level=1|school=I;N} of your choice. The {@filter 1st-level spell|spells|level=1|school=I;N} must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.  The spells' spellcasting ability is Intelligence, Wisdom, or Charisma."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Sharpshooter",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your ranged weapon attacks treat three quarters cover as half cover.",
+                        "Your ranged weapon attacks ignore half cover and three-quarters cover.",
+                        "When making a called shot, may take a -5 penalty to hit instead of disadvantage"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Farshot",
+            "source": "RbMM",
+            "page": 0,
+            "entries": [
+                "You manage to get more out of your ranged weapons than others can. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.",
+                        "Your ranged weapon attacks ignore half cover"
+
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Shield Master",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a {@item shield|phb}:",
+                {
+                    "type": "list",
+                    "items": [
+                        "If you take the {@action Attack} action on your turn, you can use a bonus action to try to {@action shove} a creature within 5 feet of you with your shield.",
+                        "If you aren't {@condition incapacitated}, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.",
+                        "If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Skill Expert",
+            "source": "RBMM",
+            "page": 0,
+            "skillProficiencies": [{
+                "choose": {
+                    "from": [
+                        "athletics",
+                        "acrobatics",
+                        "sleight of hand",
+                        "stealth",
+                        "arcana",
+                        "history",
+                        "investigation",
+                        "nature",
+                        "religion",
+                        "animal handling",
+                        "insight",
+                        "medicine",
+                        "perception",
+                        "survival",
+                        "deception",
+                        "intimidation",
+                        "performance",
+                        "persuasion"
+                    ]
+                }
+            }],
+            "expertise": [{
+                "anyProficientSkill": 1
+            }],
+            "entries": [
+                "You have honed your proficiency with particular skills, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency in one {@table skills|phb|skill} of your choice.",
+                        "Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Skilled",
+            "source": "RBMM",
+            "page": 0,
+            "skillToolLanguageProficiencies": [{
+                "choose": [{
+                    "from": [
+                        "anySkill",
+                        "anyTool"
+                    ],
+                    "count": 3
+                }]
+            }],
+            "entries": [
+                "You gain proficiency in any combination of three {@table skills|phb} or {@filter tools|items|type=tools;artisan's tools;instrument;gaming set;vehicle (land);vehicle (water)} of your choice."
+            ]
+        },
+
+        {
+            "name": "Skulker",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "ability": [{
+                    "dex": 13
+                }]
+            }],
+            "entries": [
+                "You are expert at slinking through shadows. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can try to hide when you are lightly obscured from the creature from which you are hiding.",
+                        "When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.",
+                        "Dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks relying on sight."
+                    ]
+                }
+            ]
+        },
+
         {
             "name": "Slasher",
             "source": "RBMM",
@@ -343,6 +503,26 @@
                     "items": [
                         "Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.",
                         "When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Spell Sniper",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "spellcasting": true
+            }],
+
+            "entries": [
+                "You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you cast a spell that requires you to make an attack roll, the spell's range is doubled.",
+                        "Your ranged spell attacks ignore half cover and three-quarters cover."
                     ]
                 }
             ]
@@ -816,12 +996,10 @@
             "name": "Tavern Brawler",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source": "PHB",
-                    "page": 170
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 170
+            }],
             "entries": [
                 "Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:",
                 {
@@ -995,15 +1173,11 @@
             "name": "Deadly Cunning",
             "source": "RBMM",
             "page": 0,
-            "prerequisite": [
-                {
-                    "other": [
-                        {
-                            "name": "sneak attack"
-                        }
-                    ]
-                }
-            ],
+            "prerequisite": [{
+                "other": [{
+                    "name": "sneak attack"
+                }]
+            }],
             "entries": [
                 "You are uncommonly nimble for your race. You gain the following benefits:",
                 {
