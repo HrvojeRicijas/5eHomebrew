@@ -468,7 +468,7 @@
 
         {
             "name": "Farshot",
-            "source": "RbMM",
+            "source": "RBMM",
             "page": 0,
             "entries": [
                 "You manage to get more out of your ranged weapons than others can. You gain the following benefits:",
@@ -1265,7 +1265,7 @@
             "page": 0,
             "prerequisite": [{
                 "feature": [
-                    "sneak attack"
+                    "Sneak Attack"
                 ]
             }],
             "entries": [
