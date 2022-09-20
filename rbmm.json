@@ -333,6 +333,486 @@
             ]
         },
         {
+            "name": "Slasher",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "You've learned where to cut to have the greatest results, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.",
+                        "When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Squat Nimbleness",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "race": [{
+                        "name": "dwarf"
+                    },
+                    {
+                        "name": "small race",
+                        "displayEntry": "a Small race"
+                    }
+                ]
+            }],
+            "skillProficiencies": [{
+                "choose": {
+                    "from": [
+                        "acrobatics",
+                        "athletics"
+                    ]
+                }
+            }],
+            "entries": [
+                "You are uncommonly nimble for your race. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Increase your walking speed by 5 feet.",
+                        "You gain proficiency in the {@skill Acrobatics} or {@skill Athletics} skill (your choice).",
+                        "You have advantage on any Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you make to escape from being {@condition grappled}."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Strixhaven Initiate",
+            "source": "RBMM",
+            "page": 0,
+            "additionalSpells": [{
+                    "name": "Lorehold 1",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "light#c",
+                            "sacred flame#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=cleric;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Lorehold 2",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "light#c",
+                            "thaumaturgy#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=cleric;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Lorehold 3",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "sacred flame#c",
+                            "thaumaturgy#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=cleric;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Prismari 1",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "fire bolt#c",
+                            "prestidigitation#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=bard;sorcerer"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Prismari 2",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "fire bolt#c",
+                            "ray of frost#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=bard;sorcerer"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Prismari 3",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "prestidigitation#c",
+                            "ray of frost#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=bard;sorcerer"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Quandrix 1",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "druidcraft#c",
+                            "guidance#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=druid;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Quandrix 2",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "druidcraft#c",
+                            "mage hand#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=druid;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Quandrix 3",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "guidance#c",
+                            "mage hand#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=druid;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Silverquill 1",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "sacred flame#c",
+                            "thaumaturgy#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=bard;cleric"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Silverquill 2",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "sacred flame#c",
+                            "vicious mockery#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=bard;cleric"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Silverquill 3",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "thaumaturgy#c",
+                            "vicious mockery#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=bard;cleric"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Witherbloom 1",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "chill touch#c",
+                            "druidcraft#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=druid;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Witherbloom 2",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "chill touch#c",
+                            "spare the dying#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=druid;wizard"
+                                }]
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Witherbloom 3",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            "druidcraft#c",
+                            "spare the dying#c"
+                        ]
+                    },
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [{
+                                    "choose": "level=1|class=druid;wizard"
+                                }]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "You have studied some magical theory and have learned a few spells associated with Strixhaven University.",
+                "Choose one of Strixhaven's colleges: Lorehold, Prismari, Quandrix, Silverquill, or Witherbloom. You learn two cantrips and one 1st-level spell based on the college you choose, as specified in the Strixhaven Spells table.",
+                "You can cast the chosen 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.",
+                "Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
+                {
+                    "type": "table",
+                    "caption": "Strixhaven Spells",
+                    "colLabels": [
+                        "College",
+                        "Cantrips",
+                        "1st-Level Spell"
+                    ],
+                    "colStyles": [
+                        "col-2",
+                        "col-5",
+                        "col-5"
+                    ],
+                    "rows": [
+                        [
+                            "Lorehold",
+                            "Choose two from {@spell light}, {@spell sacred flame}, and {@spell thaumaturgy}.",
+                            "Choose one 1st-level {@filter cleric or wizard spell|spells|level=1|class=cleric;wizard}."
+                        ],
+                        [
+                            "Prismari",
+                            "Choose two from {@spell fire bolt}, {@spell prestidigitation}, and {@spell ray of frost}.",
+                            "Choose one 1st-level {@filter bard or sorcerer spell|spells|level=1|class=bard;sorcerer}."
+                        ],
+                        [
+                            "Quandrix",
+                            "Choose two from {@spell druidcraft}, {@spell guidance}, and {@spell mage hand}.",
+                            "Choose one 1st-level {@filter druid or wizard spell|spells|level=1|class=druid;wizard}."
+                        ],
+                        [
+                            "Silverquill",
+                            "Choose two from {@spell sacred flame}, {@spell thaumaturgy}, and {@spell vicious mockery}.",
+                            "Choose one 1st-level {@filter bard or cleric spell|spells|level=1|class=bard;cleric}."
+                        ],
+                        [
+                            "Witherbloom",
+                            "Choose two from {@spell chill touch}, {@spell druidcraft}, and {@spell spare the dying}.",
+                            "Choose one 1st-level {@filter druid or wizard spell|spells|level=1|class=druid;wizard}."
+                        ]
+                    ]
+                }
+            ]
+        },
+
+        {
             "name": "Tavern Brawler",
             "source": "RBMM",
             "page": 0,
@@ -356,6 +836,132 @@
                 }
             ]
         },
+        {
+            "name": "Tough",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "Your hit point maximum increases by an amount equal to three times your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 3 hit points.",
+                "When rolling death saves, rolling a natural 20 immediately restores 1 hit point and rolling 1 on death counts as only 1 failure. "
+            ]
+        },
+
+        {
+            "name": "Telekinetic",
+            "source": "RBMM",
+            "page": 0,
+            "additionalSpells": [{
+                "known": {
+                    "_": [
+                        "mage hand#c"
+                    ]
+                }
+            }],
+            "entries": [
+                "You learn to move things with your mind, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Chose Intelligence, Wisdom or Charisma.",
+                        "You learn the {@spell mage hand} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability chosen by this feat.",
+                        "As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score chosen by this feat) or be moved 5 feet toward you or away from you. A creature can willingly fail this save."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Telepathic",
+            "source": "RBMM",
+            "page": 0,
+            "additionalSpells": [{
+                "ability": "inherit",
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1": [
+                                "detect thoughts"
+                            ]
+                        }
+                    }
+                }
+            }],
+            "entries": [
+                "You awaken the ability to mentally connect with others, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose Intelligence, Wisdom, or Charisma.",
+                        "You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.",
+                        "You can cast the {@spell detect thoughts} spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability chosen by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "War Caster",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "spellcasting": true
+            }],
+            "entries": [
+                "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.",
+                        "You can perform the somatic components of spells even when you have weapons or a {@item shield|phb} in one or both hands.",
+                        "When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Weapon Master",
+            "source": "RBMM",
+            "page": 0,
+            "weaponProficiencies": [{
+                "choose": {
+                    "fromFilter": "type=martial weapon;mundane weapon|miscellaneous=mundane",
+                    "count": 4
+                }
+            }],
+            "entries": [
+                "You have practiced extensively with a variety of weapons, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon.",
+                        "You gain proficiency with shields."
+                    ]
+                }
+            ]
+        },
+
+
+        {
+            "name": "Battlemage",
+            "source": "RBMM",
+            "page": 0,
+            "prerequisite": [{
+                "spellcasting": true
+            }],
+            "entries": [
+                "You are trained in casting spells while fighting close to an enemy. You gain the following benefits:",
+                {
+
+                    "type": "list",
+                    "items": [
+                        "You no longer have disadvantage due to making a ranged spell attack while adjacent to an enemy.",
+                        "You may use a weapon you are wielding as a spellcasting focus."
+                    ]
+                }
+            ]
+        },
+
         {
             "name": "All Out Attack",
             "source": "RBMM",
