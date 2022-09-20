@@ -310,6 +310,26 @@
         ]
     },
     {
+        "name": "Chef",
+        "source": "RBMM",
+        "page": 0,
+        "prerequisite":[
+            {
+                "other": "Proficiency with {@item cook's utensils|phb}"
+            }
+        ],
+        "entries":[
+            "Time and effort spent mastering the culinary arts has paid off. You gain the following benefits:",
+            {
+                "type": "list",
+                "items": [
+                    "When using the ability to cook food provided by your {@item cook's utensils|phb} proficiency, all creatures that eat the food heal for an additional {@dice 1d8} and may maximize their first hit die spent on healing this short rest.",
+                    "With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus as well as advantage on the first saving throw made within 1 minute of consuming the treat."
+                ]
+            }
+        ]
+    },
+    {
         "name": "Tavern Brawler",
         "source": "RBMM",
         "page": 0,
