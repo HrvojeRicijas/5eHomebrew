@@ -662,6 +662,44 @@
             ]
         },
         {
+            "name": "Favored by Flames",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "You learn to call on hellfire to serve your commands. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1.",
+                        "Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes {@damage 1d4} fire damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Grappler",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source": "PHB",
+                    "page": 167
+                }
+            ],
+            "srd": true,
+            "entries": [
+                "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have advantage on attack rolls against a creature you are grappling.",
+                        "You can use your action to try to restrain a creature {@condition grappled} by you. To do so, make another grapple check. If you succeed, you and the creature are both {@condition restrained} until the grapple ends.",
+                        "You can use your action to try to pin a creature restrained by you. To do so, make another grapple check. If you succeed, you are no longer {@condition restrained}."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
