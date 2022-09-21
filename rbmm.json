@@ -596,9 +596,6 @@
                         "choose": 
                         {
                             "from": [
-                                "str",
-                                "dex",
-                                "con",
                                 "int",
                                 "wis",
                                 "cha"
@@ -624,9 +621,44 @@
                 {
                     "type": "list",
                     "items": [
-                        "You learn the {@spell misty step} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The {@filter 1st-level spell|spells|level=1|school=E;D} must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+                        "You learn the {@spell misty step} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The {@filter 1st-level spell|spells|level=1|school=E;D} must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is Intelligence, Wisdom, or Charisma, chosen when you take this feat."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Fighting Initiate",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source": "TCE",
+                    "page": 80
+                }
+            ],
+            "prerequisite": [
+                {
+                    "proficiency": [
+                        {
+                            "weapon": "martial"
+                        }
+                    ]
+                }
+            ],
+            "optionalfeatureProgression": [
+                {
+                    "name": "Fighting Style",
+                    "featureType": [
+                        "FS:F"
+                    ],
+                    "progression": {
+                        "*": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Your martial training has helped you develop a particular style of fighting. As a result, you learn one {@filter Fighting Style|optionalfeatures|Feature Type=FS:F} option of your choice from the fighter class. If you already have a style, the one you choose must be different.",
+                "Whenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the fighter class that you don't have."
             ]
         },
         {
