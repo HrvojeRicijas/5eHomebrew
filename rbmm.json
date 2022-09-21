@@ -458,6 +458,123 @@
             ]
         },
         {
+            "name": "Durable",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source": "PHB",
+                    "page": 166
+                }
+            ],
+            "entries": [
+                "Hardy and resilient, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).",
+                        "When you fall to 0 hit points, you immediately gain 1 successful death save."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Eldritch Adept",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source": "TCE",
+                    "page": 79
+                }
+            ],
+            "prerequisite": [
+                {
+                    "spellcasting2020": true
+                }
+            ],
+            "optionalfeatureProgression": [
+                {
+                    "name": "Eldritch Invocations",
+                    "featureType": [
+                        "EI"
+                    ],
+                    "progression": {
+                        "*": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Studying occult lore, you learn one {@filter Eldritch Invocation|optionalfeatures|Feature Type=EI} option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.",
+                "Whenever you gain a level, you can replace the invocation with another one from the warlock class."
+            ]
+        },
+        {
+            "name": "Elemental Adept",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source": "PHB",
+                    "page": 166
+                }
+            ],
+            "prerequisite": [
+                {
+                    "spellcasting": true
+                }
+            ],
+            "entries": [
+                "When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.",
+                "Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
+                "You can select this feat multiple times. Each time you do so, you must choose a different damage type."
+            ]
+        },
+        {
+            "name": "Fey Teleportation",
+            "source": "XGE",
+            "page": 74,
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "elf",
+                            "subrace": "high"
+                        }
+                    ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "sylvan": true
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": "int",
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "misty step"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Your study of druidic lore has unlocked fey power that few others possess. Drawing on your fey knowlede, you can momentarily stride through the Feywild to shorten your path from one place to another. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You learn to speak, read, and write {@language Sylvan}.",
+                        "You learn the {@spell misty step} spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a short or long rest."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
