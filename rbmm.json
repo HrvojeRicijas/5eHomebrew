@@ -1248,6 +1248,65 @@
             ]
         },
         {
+            "name": "Mobile",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources": [
+                {
+                    "source":"PHB",
+                    "page": 168
+                }
+            ],
+            "entries": [
+                "You are exceptionally speedy and agile. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your speed increases by 10 feet.",
+                        "When you use the {@action Dash} action, {@quickref difficult terrain||3} doesn't cost you extra movement on that turn.",
+                        "When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Moderately Armored",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources": [
+                {
+                    "source":"PHB",
+                    "page": 168
+                }
+            ],
+            "prerequisite": [
+                {
+                    "proficiency": [
+                        {
+                            "armor": "light"
+                        }
+                    ]
+                }
+            ],
+            "armorProficiencies": [
+                {
+                    "medium": true,
+                    "shield|phb": true
+                }
+            ],
+            "entries": [
+                "You have trained to master the use of medium armor and shields, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency with medium armor and shields.",
+                        "Donning and doffing a shield is a free action.",
+                        "When taking a long rest in armor, you roll the Constitution save for sleeping in armor with advantage."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
