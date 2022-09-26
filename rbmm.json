@@ -798,7 +798,7 @@
                     "items": [
                         "You gain proficiency with heavy armor.",
                         "You reduce the strength requirement for wearing heavy armor by 2.",
-                        "While wearing heavy armor, you ignore all instances of physical damage that would deal less than 3 damage to you"
+                        "While wearing heavy armor, you ignore all instances of physical damage from attacks that would deal less than 3 damage to you"
                     ]
                 }
             ]
@@ -896,6 +896,32 @@
                         "You always know the number of hours left before the next sunrise or sunset.",
                         "You can accurately recall anything you have seen or heard within the past month.",
                         "You have 2 additional spells prepared or, if your class doesn't have prepared spells, you have 1 additional spell known."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lightly Armored",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources": [
+                {
+                    "source":"PHB",
+                    "page": 167
+                }
+            ],
+            "armorProficiencies": [
+                {
+                    "light": true
+                }
+            ],
+            "entries": [
+                "You have trained to master the use of light armor, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency with light armor.",
+                        "Donnig and doffing armor takes half the usual time."
                     ]
                 }
             ]
