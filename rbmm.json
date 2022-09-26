@@ -834,6 +834,50 @@
             ]
         },
         {
+            "name": "Inspiring Leader",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources": [
+                {
+                    "source":"PHB",
+                    "page": 167
+                }
+            ],
+            "prerequisite": [
+                {
+                    "ability": [
+                        {
+                            "cha": 13
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest."
+            ]
+        },
+        {
+            "name": "Immunological Adaptation",
+            "source": "RBMM",
+            "page": 0,
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "entries": [
+                "A special type of blood runs strong in you, unlocking a resilience akin to that possessed by some fiends. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have resistance to poison damage.",
+                        "You have advantage on saving throws against being {@condition poisoned} and on saving throws to overcome disease.",
+                        "After recieving poison damage, until the end of zour next turn, your natural weapons that deal slashing or piercing damage (such as claws, bites, etc.) deal and additional 1d4 poison damage."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
