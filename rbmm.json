@@ -927,6 +927,32 @@
             ]
         },
         {
+            "name": "Linguist",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources": [
+                {
+                    "source":"PHB",
+                    "page": 167
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 3
+                }
+            ],
+            "entries": [
+                "You have studied languages and codes, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You learn three languages of your choice.",
+                        "You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
