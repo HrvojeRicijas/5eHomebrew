@@ -804,6 +804,36 @@
             ]
         },
         {
+            "name": "Heavy Armor Master",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources": [
+                {
+                    "source":"PHB",
+                    "page": 167
+                }
+            ],
+            "prerequisite": [
+                {
+                    "proficiency": [
+                        {
+                            "armor": "heavy"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You can use your armor to deflect strikes that would kill others. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 3.",
+                        "Instead of {@skill Stealth} check disadvantage give by wearing heavy armor, you have -2 to Stealth checks."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
