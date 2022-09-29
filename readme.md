@@ -5,3 +5,6 @@ https://5e.tools/managebrew.html
 
 URL to paste:
 https://raw.githubusercontent.com/HrvojeRicijas/5eHomebrew/master/rbmm.json
+
+Na pageu removeati sve osim RBMM source booka:
+![alt text](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/removeBooks.jpg?raw=true)
