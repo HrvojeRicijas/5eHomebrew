@@ -1496,6 +1496,55 @@
             ]
         },
         {
+            "name": "Powder Monkey",
+            "source":"RBMM",
+            "page":0,
+            "entries":[
+                {
+                    "type": "list",
+                    "items":[
+                        "You ignore the loading property of firearms.",
+                        "When you use the Attack action and attack with a one handed weapon, you can use a bonus action to attack with a one handed firearm you are holding."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Quick Recovery",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Whenever you take the {@action Dodge} action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).",
+                        "When finishing a long rest, you recover 1 additional hit die for every 5 levels (minimum of 1)."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Resilient",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source":"PHB",
+                    "page":168
+                }
+            ],
+            "entries": [
+                "Choose one ability score. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency in saving throws using the chosen ability.",
+                        "You gain proficiency in death saving throws."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
