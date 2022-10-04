@@ -1440,6 +1440,62 @@
             ]
         },
         {
+            "name": "Prodigy",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source": "XGE",
+                    "page": 75
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "athletics",
+                            "acrobatics",
+                            "sleight of hand",
+                            "stealth",
+                            "arcana",
+                            "history",
+                            "investigation",
+                            "nature",
+                            "religion",
+                            "animal handling",
+                            "insight",
+                            "medicine",
+                            "perception",
+                            "survival",
+                            "deception",
+                            "intimidation",
+                            "performance",
+                            "persuasion"
+                        ]
+                    }
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "any": 1
+                }
+            ],
+            "entries": [
+                "You have a knack for learning new things. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain one {@table skills|phb|skill proficiency} of your choice, one {@filter tool proficiency|items|type=tool;artisan's tools} of your choice, and fluency in one language of your choice."
+                        ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
