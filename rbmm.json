@@ -1392,6 +1392,54 @@
             ]
         },
         {
+            "name": "Poisoner",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source":"TCE",
+                    "page":80
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "poisoner's kit": true
+                }
+            ],
+            "entries": [
+                "You can prepare and deliver deadly poisons, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you make a damage roll that deals poison damage, it ignores resistance to poison damage.",
+                        "You can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action.",
+                        "You gain proficiency with the {@item poisoner's kit|phb} if you don't already have it. With one hour of work using a {@item poisoner's kit|phb} and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take {@damage 2d8} poison damage and become {@condition poisoned} until the end of your next turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Polearm Master",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source":"PHB",
+                    "page":168
+                }
+            ],
+            "entries": [
+                "You can keep your enemies at bay with reach weapons. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you take the {@action Attack} action and attack with only a {@item glaive|phb}, {@item halberd|phb}, {@item quarterstaff|phb}, or {@item spear|phb}, you can use a bonus action to make a melee attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage.",
+                        "While you are wielding a {@item glaive|phb}, {@item halberd|phb}, {@item pike|phb}, {@item quarterstaff|phb}, or {@item spear|phb}, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
