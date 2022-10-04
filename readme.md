@@ -5,6 +5,7 @@
 - [Crafting tokens](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/CraftingTokens.pdf?raw=true) 
 - [Fighting style changes](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/FightingStyles.pdf?raw=true) 
 - [Tool and proficiency changes](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/ToolsAndProficiencies.pdf?raw=true) 
+- [Mechanics changes](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Mechanics.pdf?raw=true) 
 
 ### Feats
 Link to page:
