@@ -2660,6 +2660,40 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Magician",
+            "source":"RBMM",
+            "page": 0,
+            "additionalSpells": [{
+                "ability": "inherit",
+                "known":{
+                    "_":[
+                        "mage hand#c"
+                    ]
+                },
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1e": [
+                                "wristpocket",
+                                "unseen servant"
+                            ]
+                        }
+                    }
+                }
+            }],
+            "entries":[
+                "Keep a watchful eze on the card. Memorize it well. Pay no mind to your coin purse.",
+                {
+                    "type":"list",
+                    "items": [
+                        "You learn the {@spell wristpocket|EGW} and {@spell unseen servant} spells and can cast each of them once without expending spell slots as a bonus action. You regain the ability to cast the spells once you finish a long rest.",
+                        "You learn the {@spell mage hand} cantrip.",
+                        "As an action you can become invisible. The invisibility lasts until the beginning of your next turn, or until you move, make an action or a bonus action. You regain the use of this ability when you finish a short or long rest."
+                    ]
+                }
+            ]
         }
     ]
 }
