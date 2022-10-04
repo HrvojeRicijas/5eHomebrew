@@ -1350,6 +1350,48 @@
             ]
         },
         {
+            "name": "Savage Fury",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source":"XGE",
+                    "page": 75
+                }
+            ],
+            "entries": [
+                "Your fury burns tirelessly. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you hit with an attack using a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type. Once you use this ability, you can't use it again until you finish a short or long rest.",
+                        "During the first round of combat, your melee attacks deal additional damage equal to your proficiency bonus."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Piercer",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source":"TCE",
+                    "page": 80
+                }
+            ],
+            "entries": [
+                "You have achieved a penetrating precision in combat, granting you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Once per turn, when you hit a creature with an attack that deals piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.",
+                        "When you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
