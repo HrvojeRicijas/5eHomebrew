@@ -365,22 +365,13 @@
             "prerequisite": [{
                 "other": "Breath Weapon"
             }],
-            "ability": [{
-                "choose": {
-                    "from": [
-                        "str",
-                        "con",
-                        "cha"
-                    ],
-                    "amount": 1
-                }
-            }],
+
             "entries": [
                 "When angered, you radiate menace. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes {@condition frightened} of you for 1 minute. If the {@condition frightened} target takes any damage, it can repeat the saving throw, ending the effect on itself on a success."
+                        "Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes {@condition frightened} of you for 1 minute. If the {@condition frightened} target takes any damage, it can repeat the saving throw, ending the effect on itself on a success.", "You have 1 additional use of your breath weapon before needing to take a rest."
                     ]
                 }
             ]
@@ -389,17 +380,13 @@
             "name": "Dragon Hide",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "XGE",
-                    "page": 74
-                }
-            ],
-            "prerequisite": [
-                {
-                    "other": "Draconic origin"
-                }
-            ],
+            "otherSources": [{
+                "source": "XGE",
+                "page": 74
+            }],
+            "prerequisite": [{
+                "other": "Draconic origin"
+            }],
             "entries": [
                 "You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:",
                 {
@@ -416,12 +403,10 @@
             "name": "Dual Wielder",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "PHB",
-                    "page": 165
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 165
+            }],
             "entries": [
                 "You master fighting with two weapons, gaining the following benefits:",
                 {
@@ -438,12 +423,10 @@
             "name": "Dungeon Delver",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "PHB",
-                    "page": 166
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 166
+            }],
             "entries": [
                 "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:",
                 {
@@ -461,12 +444,10 @@
             "name": "Durable",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "PHB",
-                    "page": 166
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 166
+            }],
             "entries": [
                 "Hardy and resilient, you gain the following benefits:",
                 {
@@ -482,28 +463,22 @@
             "name": "Eldritch Adept",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "TCE",
-                    "page": 79
+            "otherSources": [{
+                "source": "TCE",
+                "page": 79
+            }],
+            "prerequisite": [{
+                "spellcasting2020": true
+            }],
+            "optionalfeatureProgression": [{
+                "name": "Eldritch Invocations",
+                "featureType": [
+                    "EI"
+                ],
+                "progression": {
+                    "*": 1
                 }
-            ],
-            "prerequisite": [
-                {
-                    "spellcasting2020": true
-                }
-            ],
-            "optionalfeatureProgression": [
-                {
-                    "name": "Eldritch Invocations",
-                    "featureType": [
-                        "EI"
-                    ],
-                    "progression": {
-                        "*": 1
-                    }
-                }
-            ],
+            }],
             "entries": [
                 "Studying occult lore, you learn one {@filter Eldritch Invocation|optionalfeatures|Feature Type=EI} option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.",
                 "Whenever you gain a level, you can replace the invocation with another one from the warlock class."
@@ -513,17 +488,13 @@
             "name": "Elemental Adept",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "PHB",
-                    "page": 166
-                }
-            ],
-            "prerequisite": [
-                {
-                    "spellcasting": true
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 166
+            }],
+            "prerequisite": [{
+                "spellcasting": true
+            }],
             "entries": [
                 "When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.",
                 "Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
@@ -534,41 +505,31 @@
             "name": "Fey Teleportation",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "XGE",
-                    "page": 74
-                }
-            ],
-            "prerequisite": [
-                {
-                    "race": [
-                        {
-                            "name": "elf",
-                            "subrace": "high"
-                        }
-                    ]
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "sylvan": true
-                }
-            ],
-            "additionalSpells": [
-                {
-                    "ability": "inherit",
-                    "innate": {
-                        "_": {
-                            "daily": {
-                                "1": [
-                                    "misty step"
-                                ]
-                            }
+            "otherSources": [{
+                "source": "XGE",
+                "page": 74
+            }],
+            "prerequisite": [{
+                "race": [{
+                    "name": "elf",
+                    "subrace": "high"
+                }]
+            }],
+            "languageProficiencies": [{
+                "sylvan": true
+            }],
+            "additionalSpells": [{
+                "ability": "inherit",
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1": [
+                                "misty step"
+                            ]
                         }
                     }
                 }
-            ],
+            }],
             "entries": [
                 "Your study of druidic lore has unlocked fey power that few others possess. Drawing on your fey knowlede, you can momentarily stride through the Feywild to shorten your path from one place to another. You gain the following benefits:",
                 {
@@ -584,38 +545,33 @@
             "name": "Fey Touched",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "TCE",
-                    "page": 79
-                }
-            ],
-            "additionalSpells": [
-                {
-                    "ability": {
-                        "choose": 
-                        {
-                            "from": [
-                                "int",
-                                "wis",
-                                "cha"
+            "otherSources": [{
+                "source": "TCE",
+                "page": 79
+            }],
+            "additionalSpells": [{
+                "ability": {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                },
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1e": [
+                                "misty step",
+                                {
+                                    "choose": "level=1|school=E;D"
+                                }
                             ]
-                        }
-                    },
-                    "innate": {
-                        "_": {
-                            "daily": {
-                                "1e": [
-                                    "misty step",
-                                    {
-                                        "choose": "level=1|school=E;D"
-                                    }
-                                ]
-                            }
                         }
                     }
                 }
-            ],
+            }],
             "entries": [
                 "Your exposure to the Feywild's magic has changed you, granting you the following benefits:",
                 {
@@ -630,32 +586,24 @@
             "name": "Fighting Initiate",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "TCE",
-                    "page": 80
+            "otherSources": [{
+                "source": "TCE",
+                "page": 80
+            }],
+            "prerequisite": [{
+                "proficiency": [{
+                    "weapon": "martial"
+                }]
+            }],
+            "optionalfeatureProgression": [{
+                "name": "Fighting Style",
+                "featureType": [
+                    "FS:F"
+                ],
+                "progression": {
+                    "*": 1
                 }
-            ],
-            "prerequisite": [
-                {
-                    "proficiency": [
-                        {
-                            "weapon": "martial"
-                        }
-                    ]
-                }
-            ],
-            "optionalfeatureProgression": [
-                {
-                    "name": "Fighting Style",
-                    "featureType": [
-                        "FS:F"
-                    ],
-                    "progression": {
-                        "*": 1
-                    }
-                }
-            ],
+            }],
             "entries": [
                 "Your martial training has helped you develop a particular style of fighting. As a result, you learn one {@filter Fighting Style|optionalfeatures|Feature Type=FS:F} option of your choice from the fighter class. If you already have a style, the one you choose must be different.",
                 "Whenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the fighter class that you don't have."
@@ -680,12 +628,10 @@
             "name": "Grappler",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "PHB",
-                    "page": 167
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
             "srd": true,
             "entries": [
                 "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:",
@@ -703,12 +649,10 @@
             "name": "Great Weapon Master",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
             "entries": [
                 "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
                 {
@@ -724,17 +668,13 @@
             "name": "Gunner",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"TCE",
-                    "page": 80
-                }
-            ],
-            "weaponProficiencies": [
-                {
-                    "firearms": true
-                }
-            ],
+            "otherSources": [{
+                "source": "TCE",
+                "page": 80
+            }],
+            "weaponProficiencies": [{
+                "firearms": true
+            }],
             "entries": [
                 "You have a quick hand and keen eye when employing firearms, granting you the following benefits:",
                 {
@@ -750,11 +690,9 @@
             "name": "Trained Healer",
             "source": "RBMM",
             "page": 0,
-            "prerequisite":[
-                {
-                    "other": "Proficiency in the {@skill Medicine} skill"
-                }
-            ],
+            "prerequisite": [{
+                "other": "Proficiency in the {@skill Medicine} skill"
+            }],
             "entries": [
                 "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:",
                 {
@@ -771,26 +709,18 @@
             "name": "Heavily Armored",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
-            "prerequisite": [
-                {
-                    "proficiency": [
-                        {
-                            "armor": "medium"
-                        }
-                    ]
-                }
-            ],
-            "armorProficiencies": [
-                {
-                    "heavy": true
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
+            "prerequisite": [{
+                "proficiency": [{
+                    "armor": "medium"
+                }]
+            }],
+            "armorProficiencies": [{
+                "heavy": true
+            }],
             "entries": [
                 "You have trained to master the use of heavy armor, gaining the following benefits:",
                 {
@@ -807,21 +737,15 @@
             "name": "Heavy Armor Master",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
-            "prerequisite": [
-                {
-                    "proficiency": [
-                        {
-                            "armor": "heavy"
-                        }
-                    ]
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
+            "prerequisite": [{
+                "proficiency": [{
+                    "armor": "heavy"
+                }]
+            }],
             "entries": [
                 "You can use your armor to deflect strikes that would kill others. You gain the following benefits:",
                 {
@@ -837,21 +761,15 @@
             "name": "Inspiring Leader",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
-            "prerequisite": [
-                {
-                    "ability": [
-                        {
-                            "cha": 13
-                        }
-                    ]
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
+            "prerequisite": [{
+                "ability": [{
+                    "cha": 13
+                }]
+            }],
             "entries": [
                 "You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest."
             ]
@@ -876,12 +794,10 @@
             "name": "Keen Mind",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
             "entries": [
                 "You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits:",
                 {
@@ -899,17 +815,13 @@
             "name": "Lightly Armored",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
-            "armorProficiencies": [
-                {
-                    "light": true
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
+            "armorProficiencies": [{
+                "light": true
+            }],
             "entries": [
                 "You have trained to master the use of light armor, gaining the following benefits:",
                 {
@@ -925,17 +837,13 @@
             "name": "Linguist",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "any": 3
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
+            "languageProficiencies": [{
+                "any": 3
+            }],
             "entries": [
                 "You have studied languages and codes, gaining the following benefits:",
                 {
@@ -951,12 +859,10 @@
             "name": "Lucky",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 167
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 167
+            }],
             "entries": [
                 "You have inexplicable luck that seems to kick in at just the right moment.",
                 "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, before you roll, you can spend one luck point to roll an additional {@dice d20}. You choose which of the {@dice d20}s is used for the attack roll, ability check, or saving throw.",
@@ -968,12 +874,10 @@
             "name": "Mage Slayer",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 168
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
             "entries": [
                 "You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:",
                 {
@@ -990,34 +894,27 @@
             "name": "Magic Initiate",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 168
-                }
-            ],
-            "additionalSpells": [
-                {
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
+            "additionalSpells": [{
                     "name": "Bard Spells",
                     "ability": "cha",
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Bard"
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Bard"
+                                }]
                             }
                         }
                     },
                     "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Bard",
-                                "count": 2
-                            }
-                        ]
+                        "_": [{
+                            "choose": "level=0|class=Bard",
+                            "count": 2
+                        }]
                     }
                 },
                 {
@@ -1026,21 +923,17 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Cleric"
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Cleric"
+                                }]
                             }
                         }
                     },
                     "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Cleric",
-                                "count": 2
-                            }
-                        ]
+                        "_": [{
+                            "choose": "level=0|class=Cleric",
+                            "count": 2
+                        }]
                     }
                 },
                 {
@@ -1049,21 +942,17 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Druid"
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Druid"
+                                }]
                             }
                         }
                     },
                     "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Druid",
-                                "count": 2
-                            }
-                        ]
+                        "_": [{
+                            "choose": "level=0|class=Druid",
+                            "count": 2
+                        }]
                     }
                 },
                 {
@@ -1072,21 +961,17 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Sorcerer"
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Sorcerer"
+                                }]
                             }
                         }
                     },
                     "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Sorcerer",
-                                "count": 2
-                            }
-                        ]
+                        "_": [{
+                            "choose": "level=0|class=Sorcerer",
+                            "count": 2
+                        }]
                     }
                 },
                 {
@@ -1095,21 +980,17 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Warlock"
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Warlock"
+                                }]
                             }
                         }
                     },
                     "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Warlock",
-                                "count": 2
-                            }
-                        ]
+                        "_": [{
+                            "choose": "level=0|class=Warlock",
+                            "count": 2
+                        }]
                     }
                 },
                 {
@@ -1118,21 +999,17 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Wizard"
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Wizard"
+                                }]
                             }
                         }
                     },
                     "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|class=Wizard",
-                                "count": 2
-                            }
-                        ]
+                        "_": [{
+                            "choose": "level=0|class=Wizard",
+                            "count": 2
+                        }]
                     }
                 }
             ],
@@ -1146,23 +1023,19 @@
             "name": "Martial Adept",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 168
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
+            "optionalfeatureProgression": [{
+                "name": "Maneuvers",
+                "featureType": [
+                    "MV:B"
+                ],
+                "progression": {
+                    "*": 2
                 }
-            ],
-            "optionalfeatureProgression": [
-                {
-                    "name": "Maneuvers",
-                    "featureType": [
-                        "MV:B"
-                    ],
-                    "progression": {
-                        "*": 2
-                    }
-                }
-            ],
+            }],
             "entries": [
                 "You have martial training that allows you to perform special combat maneuvers. You gain the following benefits:",
                 {
@@ -1178,21 +1051,15 @@
             "name": "Medium Armor Master",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 168
-                }
-            ],
-            "prerequisite": [
-                {
-                    "proficiency": [
-                        {
-                            "armor": "medium"
-                        }
-                    ]
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
+            "prerequisite": [{
+                "proficiency": [{
+                    "armor": "medium"
+                }]
+            }],
             "entries": [
                 "You have practiced moving in medium armor to gain the following benefits:",
                 {
@@ -1208,28 +1075,22 @@
             "name": "Metamagic Adept",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"TCE",
-                    "page": 80
+            "otherSources": [{
+                "source": "TCE",
+                "page": 80
+            }],
+            "prerequisite": [{
+                "spellcasting2020": true
+            }],
+            "optionalfeatureProgression": [{
+                "name": "Metamagic",
+                "featureType": [
+                    "MM"
+                ],
+                "progression": {
+                    "*": 2
                 }
-            ],
-            "prerequisite": [
-                {
-                    "spellcasting2020": true
-                }
-            ],
-            "optionalfeatureProgression": [
-                {
-                    "name": "Metamagic",
-                    "featureType": [
-                        "MM"
-                    ],
-                    "progression": {
-                        "*": 2
-                    }
-                }
-            ],
+            }],
             "entries": [
                 "You've learned how to exert your will on your spells to alter how they function:",
                 {
@@ -1246,12 +1107,10 @@
             "name": "Mobile",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 168
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
             "entries": [
                 "You are exceptionally speedy and agile. You gain the following benefits:",
                 {
@@ -1268,27 +1127,19 @@
             "name": "Moderately Armored",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 168
-                }
-            ],
-            "prerequisite": [
-                {
-                    "proficiency": [
-                        {
-                            "armor": "light"
-                        }
-                    ]
-                }
-            ],
-            "armorProficiencies": [
-                {
-                    "medium": true,
-                    "shield|phb": true
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
+            "prerequisite": [{
+                "proficiency": [{
+                    "armor": "light"
+                }]
+            }],
+            "armorProficiencies": [{
+                "medium": true,
+                "shield|phb": true
+            }],
             "entries": [
                 "You have trained to master the use of medium armor and shields, gaining the following benefits:",
                 {
@@ -1305,12 +1156,10 @@
             "name": "Mounted Combatant",
             "source": "RBMM",
             "page": 0,
-            "otherSources": [
-                {
-                    "source":"PHB",
-                    "page": 168
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
             "entries": [
                 "You are a dangerous foe to face while mounted. While you are mounted and aren't {@condition incapacitated}, you gain the following benefits:",
                 {
@@ -1327,12 +1176,10 @@
             "name": "Observant",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"PHB",
-                    "page":168
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
             "entries": [
                 "Quick to notice details of your environment, you gain the following benefits:",
                 {
@@ -1348,12 +1195,10 @@
             "name": "Savage Fury",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"XGE",
-                    "page": 75
-                }
-            ],
+            "otherSources": [{
+                "source": "XGE",
+                "page": 75
+            }],
             "entries": [
                 "Your fury burns tirelessly. You gain the following benefits:",
                 {
@@ -1369,12 +1214,10 @@
             "name": "Piercer",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"TCE",
-                    "page": 80
-                }
-            ],
+            "otherSources": [{
+                "source": "TCE",
+                "page": 80
+            }],
             "entries": [
                 "You have achieved a penetrating precision in combat, granting you the following benefits:",
                 {
@@ -1390,17 +1233,13 @@
             "name": "Poisoner",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"TCE",
-                    "page":80
-                }
-            ],
-            "toolProficiencies": [
-                {
-                    "poisoner's kit": true
-                }
-            ],
+            "otherSources": [{
+                "source": "TCE",
+                "page": 80
+            }],
+            "toolProficiencies": [{
+                "poisoner's kit": true
+            }],
             "entries": [
                 "You can prepare and deliver deadly poisons, granting you the following benefits:",
                 {
@@ -1417,12 +1256,10 @@
             "name": "Polearm Master",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"PHB",
-                    "page":168
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
             "entries": [
                 "You can keep your enemies at bay with reach weapons. You gain the following benefits:",
                 {
@@ -1438,96 +1275,82 @@
             "name": "Prodigy",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source": "XGE",
-                    "page": 75
+            "otherSources": [{
+                "source": "XGE",
+                "page": 75
+            }],
+            "skillProficiencies": [{
+                "choose": {
+                    "from": [
+                        "athletics",
+                        "acrobatics",
+                        "sleight of hand",
+                        "stealth",
+                        "arcana",
+                        "history",
+                        "investigation",
+                        "nature",
+                        "religion",
+                        "animal handling",
+                        "insight",
+                        "medicine",
+                        "perception",
+                        "survival",
+                        "deception",
+                        "intimidation",
+                        "performance",
+                        "persuasion"
+                    ]
                 }
-            ],
-            "skillProficiencies": [
-                {
-                    "choose": {
-                        "from": [
-                            "athletics",
-                            "acrobatics",
-                            "sleight of hand",
-                            "stealth",
-                            "arcana",
-                            "history",
-                            "investigation",
-                            "nature",
-                            "religion",
-                            "animal handling",
-                            "insight",
-                            "medicine",
-                            "perception",
-                            "survival",
-                            "deception",
-                            "intimidation",
-                            "performance",
-                            "persuasion"
-                        ]
-                    }
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "any": 1
-                }
-            ],
-            "toolProficiencies": [
-                {
-                    "any": 1
-                }
-            ],
+            }],
+            "languageProficiencies": [{
+                "any": 1
+            }],
+            "toolProficiencies": [{
+                "any": 1
+            }],
             "entries": [
                 "You have a knack for learning new things. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
                         "You gain one {@table skills|phb|skill proficiency} of your choice, one {@filter tool proficiency|items|type=tool;artisan's tools} of your choice, and fluency in one language of your choice."
-                        ]
+                    ]
                 }
             ]
         },
         {
             "name": "Powder Monkey",
-            "source":"RBMM",
-            "page":0,
-            "entries":[
-                {
-                    "type": "list",
-                    "items":[
-                        "You ignore the loading property of firearms.",
-                        "When you use the Attack action and attack with a one handed weapon, you can use a bonus action to attack with a one handed firearm you are holding."
-                    ]
-                }
-            ]
+            "source": "RBMM",
+            "page": 0,
+            "entries": [{
+                "type": "list",
+                "items": [
+                    "You ignore the loading property of firearms.",
+                    "When you use the Attack action and attack with a one handed weapon, you can use a bonus action to attack with a one handed firearm you are holding."
+                ]
+            }]
         },
         {
             "name": "Quick Recovery",
             "source": "RBMM",
             "page": 0,
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "Whenever you take the {@action Dodge} action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).",
-                        "When finishing a long rest, you recover 1 additional hit die for every 5 levels (minimum of 1)."
-                    ]
-                }
-            ]
+            "entries": [{
+                "type": "list",
+                "items": [
+                    "Whenever you take the {@action Dodge} action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).",
+                    "When finishing a long rest, you recover 1 additional hit die for every 5 levels (minimum of 1)."
+                ]
+            }]
         },
         {
             "name": "Resilient",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"PHB",
-                    "page":168
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 168
+            }],
             "entries": [
                 "Choose one ability score. You gain the following benefits:",
                 {
@@ -1543,40 +1366,32 @@
             "name": "Ritual Caster",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"PHB",
-                    "page":169
-                }
-            ],
-            "prerequisite": [
-                {
-                    "ability": [
-                        {
-                            "int": 13
-                        },
-                        {
-                            "wis": 13
-                        },
-                        {
-                            "cha": 13
-                        }
-                    ]
-                }
-            ],
-            "additionalSpells": [
-                {
+            "otherSources": [{
+                "source": "PHB",
+                "page": 169
+            }],
+            "prerequisite": [{
+                "ability": [{
+                        "int": 13
+                    },
+                    {
+                        "wis": 13
+                    },
+                    {
+                        "cha": 13
+                    }
+                ]
+            }],
+            "additionalSpells": [{
                     "name": "Bard Spells",
                     "ability": "cha",
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Bard|components & miscellaneous=ritual",
-                                        "count": 2
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Bard|components & miscellaneous=ritual",
+                                    "count": 2
+                                }]
                             }
                         }
                     }
@@ -1587,12 +1402,10 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Cleric|components & miscellaneous=ritual",
-                                        "count": 2
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Cleric|components & miscellaneous=ritual",
+                                    "count": 2
+                                }]
                             }
                         }
                     }
@@ -1603,12 +1416,10 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Druid|components & miscellaneous=ritual",
-                                        "count": 2
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Druid|components & miscellaneous=ritual",
+                                    "count": 2
+                                }]
                             }
                         }
                     }
@@ -1619,12 +1430,10 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Sorcerer|components & miscellaneous=ritual",
-                                        "count": 2
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Sorcerer|components & miscellaneous=ritual",
+                                    "count": 2
+                                }]
                             }
                         }
                     }
@@ -1635,12 +1444,10 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Warlock|components & miscellaneous=ritual",
-                                        "count": 2
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Warlock|components & miscellaneous=ritual",
+                                    "count": 2
+                                }]
                             }
                         }
                     }
@@ -1651,12 +1458,10 @@
                     "innate": {
                         "_": {
                             "daily": {
-                                "1": [
-                                    {
-                                        "choose": "level=1|class=Wizard|components & miscellaneous=ritual",
-                                        "count": 2
-                                    }
-                                ]
+                                "1": [{
+                                    "choose": "level=1|class=Wizard|components & miscellaneous=ritual",
+                                    "count": 2
+                                }]
                             }
                         }
                     }
@@ -1672,12 +1477,10 @@
             "name": "Savage Attacker",
             "source": "RBMM",
             "page": 0,
-            "otherSources":[
-                {
-                    "source":"PHB",
-                    "page":169
-                }
-            ],
+            "otherSources": [{
+                "source": "PHB",
+                "page": 169
+            }],
             "entries": [
                 "Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total."
             ]
@@ -2641,12 +2444,12 @@
         {
             "name": "Trickshot",
             "source": "RBMM",
-            "page":0,
-            "entries":[
+            "page": 0,
+            "entries": [
                 "Strings? Powder? No, just a flick of the wrist.",
                 {
-                    "type":"list",
-                    "items":[
+                    "type": "list",
+                    "items": [
                         "When using a thrown weapon to make a ranged weapon attack, you may use Dexterity instead of Strength.",
                         "You don't get disadvantage from making a ranged attack with enemies in melee when using a thrown weapon.",
                         "You may draw one light weapon as a free action during your turn or as a reaction during any other chatracter's turn."
@@ -2656,12 +2459,12 @@
         },
         {
             "name": "Magician",
-            "source":"RBMM",
+            "source": "RBMM",
             "page": 0,
             "additionalSpells": [{
                 "ability": "inherit",
-                "known":{
-                    "_":[
+                "known": {
+                    "_": [
                         "mage hand#c"
                     ]
                 },
@@ -2676,10 +2479,10 @@
                     }
                 }
             }],
-            "entries":[
+            "entries": [
                 "Keep a watchful eze on the card. Memorize it well. Pay no mind to your coin purse.",
                 {
-                    "type":"list",
+                    "type": "list",
                     "items": [
                         "You learn the {@spell wristpocket|EGW} and {@spell unseen servant} spells and can cast each of them once without expending spell slots as a bonus action. You regain the ability to cast the spells once you finish a long rest.",
                         "You learn the {@spell mage hand} cantrip.",
