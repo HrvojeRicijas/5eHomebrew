@@ -2565,9 +2565,7 @@
             "source": "RBMM",
             "page": 0,
             "prerequisite": [{
-                "feature": [
-                    "Sneak Attack"
-                ]
+                "other": "{@classFeature Sneak Attack|Rogue|PHB|1}"
             }],
             "entries": [
                 "You are uncommonly nimble for your race. You gain the following benefits:",
