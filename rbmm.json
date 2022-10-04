@@ -2644,6 +2644,22 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Trickshot",
+            "source": "RBMM",
+            "page":0,
+            "entries":[
+                "Strings? Powder? No, just a flick of the wrist.",
+                {
+                    "type":"list",
+                    "items":[
+                        "When using a thrown weapon to make a ranged weapon attack, you may use Dexterity instead of Strength.",
+                        "You don't get disadvantage from making a ranged attack with enemies in melee when using a thrown weapon.",
+                        "You may draw one light weapon as a free action during your turn or as a reaction during any other chatracter's turn."
+                    ]
+                }
+            ]
         }
     ]
 }
