@@ -860,11 +860,6 @@
             "name": "Immunological Adaptation",
             "source": "RBMM",
             "page": 0,
-            "ability": [
-                {
-                    "con": 1
-                }
-            ],
             "entries": [
                 "A special type of blood runs strong in you, unlocking a resilience akin to that possessed by some fiends. You gain the following benefits:",
                 {
