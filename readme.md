@@ -1,9 +1,9 @@
 # Changes for the new 5e campaign
 
 ### Stvari koje su se mijenjale
-![link](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Class primary stats.pdf?raw=true) 
-![link](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Crafting Tokens.pdf?raw=true) 
-![link](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Fighting Styles.pdf?raw=true) 
+[file](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Class primary stats.pdf?raw=true) 
+[fajl](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Crafting Tokens.pdf?raw=true) 
+[aaa](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Fighting Styles.pdf?raw=true) 
 ![link](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Tools and proficiencies.pdf?raw=true) 
 
 ### Feats
