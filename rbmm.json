@@ -1329,6 +1329,27 @@
             ]
         },
         {
+            "name": "Observant",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources":[
+                {
+                    "source":"PHB",
+                    "page":168
+                }
+            ],
+            "entries": [
+                "Quick to notice details of your environment, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.",
+                        "You have a +3 bonus to your ({@skill Perception}) score."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Second Chance",
             "source": "RBMM",
             "page": 0,
