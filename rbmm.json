@@ -453,7 +453,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).",
+                        "When you roll a Hit Die to regain hit points, you regain additional hit points equal to your Constitution modifier.",
                         "When you fall to 0 hit points, you immediately gain 1 successful death save."
                     ]
                 }
