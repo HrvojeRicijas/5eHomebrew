@@ -2211,7 +2211,7 @@
             "source": "RBMM",
             "page": 0,
             "entries": [
-                "Your hit point maximum increases by an amount equal to three times your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 3 hit points.",
+                "Your hit point maximum increases by an amount equal to two times your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.",
                 "When rolling death saves, rolling a natural 20 immediately restores 1 hit point and rolling 1 on death counts as only 1 failure. "
             ]
         },
