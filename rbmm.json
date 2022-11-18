@@ -453,7 +453,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).",
+                        "When you roll a Hit Die to regain hit points, you regain additional hit points equal to your Constitution modifier.",
                         "When you fall to 0 hit points, you immediately gain 1 successful death save."
                     ]
                 }
@@ -2211,7 +2211,7 @@
             "source": "RBMM",
             "page": 0,
             "entries": [
-                "Your hit point maximum increases by an amount equal to three times your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 3 hit points.",
+                "Your hit point maximum increases by an amount equal to two times your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.",
                 "When rolling death saves, rolling a natural 20 immediately restores 1 hit point and rolling 1 on death counts as only 1 failure. "
             ]
         },
