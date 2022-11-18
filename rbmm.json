@@ -2494,5 +2494,969 @@
                 }
             ]
         }
+    ],
+    "spell":[
+        {
+            "name": "Shock",
+            "source": "RBMM",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "An arc of electrical energy rushes towards a target within range. Make a ranged spell attack against the target. On a hit, the target receives {@dice 1d6} lightning damage and one different target within 30 feet of the original target receives {@dice 1d4} lightning damage.",
+                "This spell creates more than one arc when you reach higher levels: two arcs at 5th level, three arcs at 11th level, and four arcs at 17th level. Make a seperate attack roll for each arc."
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "spellAttack":[
+                "R"
+            ],
+            "miscTag": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST", 
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Scorpion Strike",
+            "source": "RBMM",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "a weapon the caster is proficient with"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You infuse your weapon with poisonous energy and make a melee attack with it against a creature within reach. On a hit, the target suffers the weapons's normal damage and an extra {@dice 2d8} poison damage.",
+                "Additionally the target must succeed a Constitution saving throw or be {@condition paralyzed} until the end of your next turn. Creatures that are undead, constructs or oozes have advantage on this saving throw."
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by {@scaledice 1d8|2-9|1d8} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "miscTag": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Rejuvination Pod",
+            "source": "RBMM",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "A 5 foot wide pod of thick plant fiber sprouts from the ground and attempts to encase a target of your choice within range. If the target fails on a Dexterity saving throw, the healing pod encases them fully, incapacitating, restraining and heavily obscuring them. It also grants them resistance to all damage and heals them for 2d4 + your spellcasting ability modifier health at the end of their turn. A target in the pod can make a Strength saving throw at the end of their turn to break free and end the spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name":"At Higher Levels",
+                    "entries":[
+                        "TODO"
+                    ]
+                }
+            ],
+            "miscTag": [
+                "HL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Paralytic Smite",
+            "source": "RBMM",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You envenom your weapon with potent magical poison. The next time you hit a creature with a melee attack before this spell ends, the attack deals extra {@dice 3d6} poison damage and the creature must succeed on a Constitution saving throw or be {@condition paralyzed} until the spell ends. At the end of each of its turns, the creature can make another Constitution saving throw, ending the effect on a success."
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the extra damage increases by {@scaledice 1d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "miscTag": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Lightning Arc",
+            "source": "RBMM",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a thin tungsten wire bent in to the shape of the spells effect"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A stroke of lightning forming a 5 feet wide line blasts out from you in a direction of a target 60 within 60 feet of you. You then choose a different target within 40 feet of the first target to which the lightning travels. You then choose a third different target within 20 feet of the second target to which the lighning travels.",
+                "All creatures in the spell effect area must make a Dexterity saving throw. On a fail, they take {@dice 4d10} lightning damage, increased by {@dice 1d10} for each hit after the first. On a successful save, the target takes half as much damage.",
+                "The lightning ignites flammable objects in the area that aren't being worn or carried."
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4rd level or higher, the damage increases by {@scaledice 1d10|3-9|1d10} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "miscTag": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Lightning Arc",
+            "source": "RBMM",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a thin tungsten wire bent in to the shape of the spells effect"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A stroke of lightning forming a 5 feet wide line blasts out from you in a direction of a target 60 within 60 feet of you. You then choose a different target within 40 feet of the first target to which the lightning travels. You then choose a third different target within 20 feet of the second target to which the lighning travels.",
+                "All creatures in the spell effect area must make a Dexterity saving throw. On a fail, they take {@dice 4d10} lightning damage, increased by {@dice 1d10} for each hit after the first. On a successful save, the target takes half as much damage.",
+                "The lightning ignites flammable objects in the area that aren't being worn or carried."
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4rd level or higher, the damage increases by {@scaledice 1d10|3-9|1d10} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "miscTag": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hook, Line, and Sinker",
+            "source": "RBMM",
+            "level": 2,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a metal chain link"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure etheral chains binding you and the target of the spell. The target must make a Constitution saving throw. On a failiure, the target receives {@dice 2d6} force damage and, if it is a creature of your size or smaller, you may pull them up to 30 feet towards yourself.",
+                "Succeed or fail, you may pull yourself 30ft towards the target."
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledice 1d6|3-9|1d6} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "miscTag": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Gust of Miasma",
+            "source": "RBMM",
+            "level": 1,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You exhale a 15-foot cone of poisonous air. Each creature in the area must make a Constitution saving throw. On a failed save, they are {@condition poisoned} for a minute and can repeat the saving throw at the end of each of their turns, ending the effect on a success."
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, it also deals {@scaledice 1d6|2-9|1d6} for each slot level above 1st to each creature that failed the initial save."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "miscTag": [
+                "SCL"
+            ],
+            "areaTags": [
+                "N"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Greater Message",
+            "source": "RBMM",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+		        "distance": {
+			        "type": "unlimited"
+		        }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a feather of a migratory bird"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration":{
+                        "type":"round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You send a short message of twenty-five words or less to a creature you are familiar with in the same plane as you. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Communicate",
+            "source": "RBMM",
+            "level": 1,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance":{
+                    "type":"miles",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration":{
+                        "type":"round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You name one creature you are familiar with, and think of one word. If the creature is within range, it hears the word in their mind, and if they are familiar with you, they can identify the sender of the message."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Cog Domain",
+            "source": "RBMM",
+            "shortName": "Cog",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Cog Domain|Cleric||Cog|RBMM|1",
+                "Channel Divinity: Deconstruction|Cleric||Cog|RBMM|2",
+                "Channel Divinity: Kickstart|Cleric||Cog|RBMM|2",
+                "Grounding|Cleric||Cog|RBMM|6",
+                "Spark Of Life|Cleric||Cog|RBMM|6",
+                "Negative Charge|Cleric||Cog|RBMM|8",
+                "Energy Transfer|Cleric||Cog|RBMM|12",
+                "Capacitor|Cleric||Cog|RBMM|17",
+                "Electrotherapy|Cleric||Cog|RBMM|17"
+            ],
+            "subclassSpells": [
+                "Thunderwave",
+                "Witch Bolt",
+                "Shatter",
+                "Immovable Object|EGW",
+                "Thunder Step|XGE",
+                "Lightning Bolt",
+                "Lightning Arc|RBMM",
+                "Fabricate",
+                "Storm Sphere|XGE",
+                "Animate Objects",
+                "Destructive Wave",
+                "Awaken"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        
+        {
+            "name": "Cog Domain",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 1,
+            "entries": [
+                "Clerics of the cog domain are a new addition to the varied types of clerics that came about with the discovery of the steam engine. With that discovery came the need for the power to channel arcane into a more useful form, a more direct form - a form scholars like to call \"electricity\". Clerics of this domain use their faith to channel the arcane into various objects and creature, animating and/or healing them. These clerics are very much utilized by all kinds of different companies all throughout the Old World as animators of golems, or just as their usual role of a healer.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Domain Spells|Cleric||Cog|RBMM|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "High Current|Cleric||Cog|RBMM|1"
+                }
+            ]
+        },
+        {
+            "name": "Domain Spells",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "{@i 1st-level Cog Domain feature}",
+                "You gain domain spells at the cleric levels listed in the Cog Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+                {
+                    "type": "table",
+                    "caption": "Cog Domain Spells",
+                    "colLabels": [
+                        "Cleric Level",
+                        "Spells"
+                    ],
+                    "colStyles":[
+                        "col-2 text-center",
+						"col-10"
+                    ],
+                    "rows":[
+                        [
+                            "1st",
+                            "{@spell Thunderwave}, {@spell Witch Bolt}"
+                        ],
+                        [
+                            "3nd",
+                            "{@spell Shatter}, {@spell Immovable Object|EGW}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Thunder Step|XGE}, {@spell Lightning Bolt}, {@spell Lightning Arc|RBMM}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Fabricate}, {@spell Storm Sphere|XGE}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Animate Objects}, {@spell Destrictive Wave}, {@spell Awaken}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "High Current",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 1,
+            "header":2,
+            "entries": [
+                "{@i 1st-level Cog Domain feature}",
+                "When you toll damage for a spell you cast that deals lightning damage, you can reroll any die that rolled a 1 once. Additionally, lightning damage you deal with spells can not be absorbed and treats immunity as resistance.",
+                "When you reach lvl 11 you may reroll any die that rolled a 1 or a 2 once."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Deconstruction",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "{@i 2nd-level Cog Domain feature}",
+                "As an action, you present your holy symbol and evoke disruptive energy. One construct or undead of your choice within 30ft gains vulnerability to all damage until the end beginning of your next turn. If the target fails a Constitution save, they also lose either their action or all of their movement (their choice) on their next turn."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Kickstart",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "{@i 2nd-level Cog Domain feature}",
+                "When casting a spell that deals lightning damage, you may choose to replace all lightning damage the spell would deal with healing untill the end of your next turn. Any character that has been dead for less than a minute healed by this spell has a {@chance 50|||Target is revived!|It doesn't seem as if it did anything} chance of returning to life with 1 hp." 
+            ]
+        },
+        {
+            "name": "Grounding",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "{@i 6th-level Cog Domain feature}",
+                "You gain resistance to lightning damage, and immunity to lightning damage dealt to you by your spells."
+            ]
+        },
+        {
+            "name": "Spark of Life",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "{@i 6th-level Cog Domain feature}",
+                "Once per long rest you may infuse an object with animating energy. As an action, you target an object within 60 feet. The object becomes a construct with stats depending on the size of the object.",
+                {
+                    "type": "table",
+                    "caption": "Sparky",
+                    "colLabels": [
+                        "Object size",
+                        "Hit Points",
+                        "Armor Class",
+                        "Speed",
+                        "To-Hit",
+                        "Damage",
+                        "Duration"
+                    ],
+                    "colStyles":[
+                        "col-2 text-center",
+						"col-10"
+                    ],
+                    "rows":[
+                        [
+                            "Tiny",
+                            "Cleric level",
+                            "18",
+                            "15 feet",
+                            "+1",
+                            "1d4",
+                            "8 hours"
+                        ],
+                        [
+                            "Small",
+                            "3 × Cleric level",
+                            "17",
+                            "25 feet",
+                            "+ your proficiency bonus",
+                            "1d6 + your proficiency bonus",
+                            "4 hours"
+                        ],
+                        [
+                            "Medium",
+                            "5 × CLeric level",
+                            "15",
+                            "30 feet",
+                            "+ 2 + your proficiency bonus",
+                            "1d10 + your proficiency bonus",
+                            "2 hours"
+                        ],
+                        [
+                            "Large",
+                            "8 × Cleric level",
+                            "12",
+                            "30 feet",
+                            "+ 2 × your proficiency bonus",
+                            "2d6 + your proficiency bonus",
+                            "1 hour"
+                        ],
+                        [
+                            "Huge",
+                            "10 × Cleric level",
+                            "11",
+                            "20 feet",
+                            "+2 × your proficiency bonus",
+                            "2d10 + your proficiency bonus",
+                            "30 minutes"
+                        ]
+                    ]
+                },
+                "You can communicate with and command the object mentally if you are within 120 feet of it. The object has blindsight 60 feet and percieves nothing bezond that unless you inform it or unless it's physical form grants it a different means of perception (a telescope or a camera would grant it sight).",
+                "The object acts after you on your initiative count."
+            ]
+        },
+        {
+            "name": "Negative Charge",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 8,
+            "header": 2,
+            "entries": [
+                "{@i 8th-level Cog Domain feature}",
+                "When you cast a spell, you may choose a creature that receives no lightning damage from that spell.",
+                "If that creature is a construct or Warforged, you may instead have it heal for the damage recieved.",
+                "You can use this ability up to your Wisdom modifier times per long rest."
+            ]
+        },
+        {
+            "name": "Energy Transfer",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 12,
+            "header": 2,
+            "entries": [
+                "{@i 12th-level Cog Domain feature}",
+                "You may cast the {@spell Thunder Step|XGE} as a bonus action using this feature. Once per day, when casting {@spell Thunder Step|XGE} using this feature, you may choose not to expend a spell slot, instead casting the spell at the highest spell slot level available to you.",
+                "When cast using this feature, {@spell Thunder Step|XGE} deals lightning damage instead of thunder."
+            ]
+        },
+        {
+            "name": "Capacitor",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "{@i 17th-level Cog Domain feature}",
+                "When you cast a spell that deals lightning damage, you recover a spell slot 2 levels lower than the spell you cast."
+            ]
+        },
+        {
+            "name": "Electrotherapy",
+            "source": "RBMM",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Cog",
+            "subclassSource": "RBMM",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "{@i 17th-level Cog Domain {@variantrule optional class features|tce|optional feature}, which replaces the {@subclassFeature Capacitor|Cleric|PHB|Cog|RBMM|17|RBMM} feature}",
+                "When you cast a spell that deals lightning damage, you may heal a target within 5 feet by an amount equal to the level of the spell."
+            ]
+        }
     ]
 }
