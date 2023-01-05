@@ -7,6 +7,7 @@
 - [Tool and proficiency changes](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/ToolsAndProficiencies.pdf?raw=true) 
 - [Mechanics changes](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Mechanics.pdf?raw=true) 
 - [Weapons](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Weapons.pdf?raw=true) 
+- [Spells](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Spells.txt?raw=true) 
 
 ### Feats
 Link to page:
