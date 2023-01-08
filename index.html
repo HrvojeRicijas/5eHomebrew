@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting token calculator</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="display: flex; flex-direction: column; margin: 3rem;">
+            <label for="price">Item price:</label>
+            <input type="text" id="price" value="0">
+            <button onclick="tokens()">Tokens required</button>
+            <button onclick="Cost()">Cost to buy tokens</button>
+        </div>
+        <div style="display: flex; flex-direction: column; margin: 3rem;">
+            <label for="smallCost">Basic token cost:</label>
+            <input type="text" id="smallCost" value="10">
+            <label for="midCost">Advanced token cost:</label>
+            <input type="text" id="midCost" value="30">
+            <label for="bigCost">Ultimate token cost:</label>
+            <input type="text" id="bigCost" value="90">
+        </div>
+        
+    </div>
+    <div id="output" style="margin-left: 3rem;">
+
+    </div>
+</body>
+
+<script>
+
+    function tokens(){
+        let price = document.getElementById('price').value
+        let big = Math.floor(price/400)
+        let mid = Math.floor(price/100)
+        let small = Math.floor(price/25)
+
+        window.alert ("Crafting requires:\n  " + big + " Ultimate tokens,\n  " + mid + " Advanced tokens,\n  " + small + " Basic tokens.")
+
+        document.getElementById("output").innerHTML = "Crafting of the <b>" + price + " gold </b> item requires:<br>  " + big + " Ultimate tokens,<br>  " + mid + " Advanced tokens,<br>  " + small + " Basic tokens.";
+    }
+
+    function Cost(){
+        let price = document.getElementById('price').value
+        let big = Math.floor(price/400)
+        let mid = Math.floor(price/100)
+        let small = Math.floor(price/25)
+
+        let smallCost = document.getElementById('smallCost').value
+        let midCost = document.getElementById('midCost').value
+        let bigCost = document.getElementById('bigCost').value
+
+        let myBig = 0
+        let myMid = 0
+        let mySmall = 0
+        let cost = 0
+        //window.alert ("Crafting requires:\n  " + big + " Ultimate tokens,\n  " + mid + " Advanced tokens,\n  " + small + " basic tokens.")
+        let outText = ""
+         
+        myBig = big
+        cost = cost + bigCost*myBig
+        myBig = myBig + big
+        outText = outText + "<b>You need " + big + " Ultimate tokens, " + mid + " Advanced tokens and " + small + " Basic tokens </b> <br>" 
+        outText = outText + "Bought " + big + " Ultimate tokens for direct crafting, costing " + bigCost*big + " gold <br>"
+        cost = cost + bigCost*big
+        myMid = big*4
+        outText = outText + "Bought " + big + " Ultimate tokens for conversion to " + big * 4 + " Advanced tokens, costing " + bigCost*big + " gold <br>"
+        cost = cost + bigCost*big
+        mySmall = mySmall+big*16
+        outText = outText + "Bought " + big + " Ultimate tokens for conversion to " + big * 16 + " Basic tokens, costing " + bigCost*big + " gold <br>"
+
+        newMid = mid - myMid
+        newSmall = small - mySmall 
+         
+        if (newMid >= 2) {
+            outText = outText + "Bought 1 Ultimate token for conversion to 2 Advanced and 8 Basic tokens, costing " + bigCost + " gold <br>"
+            cost = cost + bigCost*1
+        myMid = myMid + 2
+        mySmall = mySmall + 8
+        }
+
+        outText = outText + "<b>Total for now: " + cost + "gold  <br><br>"
+        newMid = mid - myMid
+        newSmall = small - mySmall 
+        outText = outText + "Still need " + newMid + " Advanced tokens and " + newSmall + " Basic tokens </b> <br>" 
+
+        myMid = myMid + newMid
+        cost = cost + midCost*newMid
+        outText = outText + "Bought " + newMid + " Advanced tokens for direct crafting, costing " + midCost*newMid + " gold <br>"
+        mySmall = mySmall + newMid*4
+        cost = cost + midCost*newMid
+        outText = outText + "Bought " + newMid + " Advanced tokens for conversion to " + newMid * 4 + " Basic tokens, costing " + midCost*newMid + " gold <br>"
+
+        outText = outText + "<b>Total for now: " + cost + "gold  <br><br>"
+        newMid = mid - myMid
+        newSmall = small - mySmall 
+        outText = outText + "Still need " + newSmall + " Basic tokens </b> <br>" 
+
+        outText = outText + "Bought " + newSmall + " Basic tokens for direct crafting, costing " + smallCost*newSmall + " gold <br>"
+        cost = cost + smallCost*newSmall
+        mySmall = mySmall + newSmall
+
+        outText = outText + "<b> Final cost: " + cost + "</b>"
+        document.getElementById("output").innerHTML = "Crafting of the <b>" + price + " gold </b> item requires:<br>  " + big + " Ultimate tokens,<br>  " + mid + " Advanced tokens,<br>  " + small + " Basic tokens. <br><br> Crafting steb by step: <br>" + outText;
+    }      
+</script>
+</html>

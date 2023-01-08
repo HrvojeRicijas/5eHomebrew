@@ -8,7 +8,7 @@
 - [Mechanics changes](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Mechanics.pdf?raw=true) 
 - [Weapons](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Weapons.pdf?raw=true) 
 - [Spells](https://github.com/HrvojeRicijas/5eHomebrew/blob/master/Spells.txt?raw=true) 
-
+- [Crafting Calculator](https://htmlpreview.github.io/?https://github.com/HrvojeRicijas/5eHomebrew/blob/master/index.html)
 ### Feats
 Link to page:
 https://5e.tools/managebrew.html
