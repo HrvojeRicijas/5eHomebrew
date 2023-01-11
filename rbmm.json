@@ -1334,6 +1334,8 @@
                 ]
             }]
         },
+
+        
         {
             "name": "Quick Recovery",
             "source": "RBMM",
@@ -1365,6 +1367,46 @@
                 }
             ]
         },
+
+        {
+            "name": "Ironbreaker",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "Spears, swords, guns and cannons; they all owe their life to the blacksmiths hammer.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency with all melee bludgeoning weapons",
+                        "Your attacks ignore resistance to bludgeoning damage",
+                        "You gain proficiency with the smith's tools",
+                        "When attempting to craft an item with your smith's tools, if you fail you may recover 1 crafting token of any tier",
+                        "You may use your smiths tools to enhance weapons. With one hour of work, you can enhance up to your proficiency bonus weapons, giving the weapon an extra 1d4 damage die. This effect persists untill a 1 is rolled on either the attack or on the damage die"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Engineer",
+            "source": "RBMM",
+            "page": 0,
+            "entries": [
+                "One wonders, if the engeneers want their devices to stay in one piece, why do they use so many springs?",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency with firearms",
+                        "Firearms you are using have their misfire score reduced by 1, down to a minimum of 1",
+                        "You gain proficiency with the tinker's tools",
+                        "When attempting to craft an item with your tinker's tools, if you fail you may recover 1 crafting token of any tier",
+                        "With one hour of work using your tinker's tools you can create a makeshift explosive. The explosive is a thrown weapon that deals 1d6 damage in a 5ft diameter, and you may use up to  your proficiency bonus tokens to enhance it's effects. The save DC of the explosive is 10 + your tinker's tools proficiency bonus. On a successful Dexterity save the target recieves halved damage.\n Each basic token increases the damage by 1d6.\n Each advanced token increases the damage by 2d6 and adds an extra 5ft to the radius.\n Each ultimate token increases the damage by 3d6, adds an extra 5ft to the radius and increases the save DC by 1"
+                    ]
+                }
+            ]
+        },
+
+
         {
             "name": "Ritual Caster",
             "source": "RBMM",
