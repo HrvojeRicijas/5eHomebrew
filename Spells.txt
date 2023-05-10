@@ -1,10 +1,19 @@
--NL19rEt-CkNfaluyZsX  Communicate
--NL1A6VVncVXWQBl3zFj  Electrify
--NL1AB_YMiwAi-Bq4qIN  Greater message
--NL1AIdfuZsp6h2E46EV  Gust of miasma
--NL1ALdccgNRov-cUnMz  Hook line and sinker
--NL1APSvg74tMMbACSqH  Lightning arc
--NL1ATwu5TzX2e1KAmsk  Paralytic smite
--NL1BNNVMzQtxgy-Cdqd  Rejuvenation pod
--NL1AaJKlqKYG32Uwtdb  Scorpion strike
--NL1Af1RNXeD-Cc0eqBs  Shock
+-NV6atKsb0IEs35V5cWV Building static
+-NV6ax2e5u0h7faIiV74 Communicate
+-NV6b-01FntdavWglSoy Electrify
+-NV6b20VvmNZqICSsv5f Engulfing flame
+-NV6b6iqw60hY-ACRSYG Force shield
+-NV6bFDPp6OIKjSZDf1g Forced life
+-NV6bIhMqK4CioWr1pz4 Greater message
+-NV6bR1zb-gP-njEqnz3 Gust of miasma
+-NV6bV7jiW4TbzLz3Lkz Hook, line and sinker
+-NV6ba9yK705tG1EyBUu Lightning arx
+-NV6beDcSY4Dcpr4zOkD Lightning blade
+-NV6bgvIrNJKISROz0Bo Lightning maelstrom
+-NV6blHzhs8UT6Gidu-o Lightning transference
+-NV6bpFOBrBHYNzVVqhd Paralytic smite
+-NV6bsLYSGnsYBm6mhbY Rejuvenation pod
+-NV6bvJQNExMHB9q3D7e Scorpion strike
+-NV6byfoE8utnh_amnQy Shock
+-NV6c07Y95auvFRHLJ2h Shocking strike
+-NV6c2vSVv-Q9f-7EK1n Undying endurance
