@@ -3,7 +3,7 @@
         "sources": [{
             "json": "RBMM",
             "abbreviation": "RBMM",
-            "full": "Rici's Book of Magical Magic",
+            "full": "Rici's Book of Mechanical Machinations",
             "authors": [
                 "Ricij"
             ],
@@ -681,6 +681,7 @@
                     "type": "list",
                     "items": [
                         "You gain proficiency with firearms (see \"{@variantrule Firearms|DMG}\" in the Dungeon Master's Guide).",
+                        "When you misfire with a firearm, you may use a bonus action to attempt to fix the weapon immediately. Even if you fail, you may still attempt to fix your weapon as an action before it is broken.",
                         "Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged weapon attack rolls."
                     ]
                 }
@@ -865,7 +866,7 @@
             }],
             "entries": [
                 "You have inexplicable luck that seems to kick in at just the right moment.",
-                "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, before you roll, you can spend one luck point to roll an additional {@dice d20}. You choose which of the {@dice d20}s is used for the attack roll, ability check, or saving throw.",
+                "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, before you roll, you can spend one luck point to roll an additional {@dice d20}. You choose whether the original roll or the lucky roll is used for the attack roll, ability check, or saving throw.",
                 "You can also spend one luck point when an attack roll is made against you, but before the die is rolled. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
                 "You regain your expended luck points when you finish a long rest."
             ]
@@ -1146,7 +1147,7 @@
                     "type": "list",
                     "items": [
                         "You gain proficiency with medium armor and shields.",
-                        "Donning and doffing a shield is a free action.",
+                        "Donning and doffing a shield is one action category quicker for you. \n(full round -> action, action -> bonus action, bonus action -> free action)",
                         "When taking a long rest in armor, you roll the Constitution save for sleeping in armor with advantage."
                     ]
                 }
@@ -1161,13 +1162,33 @@
                 "page": 168
             }],
             "entries": [
-                "You are a dangerous foe to face while mounted. While you are mounted and aren't {@condition incapacitated}, you gain the following benefits:",
+                "You are a dangerous foe to face while mounted. While you are mounted on a creature you are controlling and aren't {@condition incapacitated}, you gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
                         "You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.",
                         "You can force an attack targeted at your mount to target you instead.",
                         "If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Musician",
+            "source": "RBMM",
+            "page": 0,
+            "otherSources": [{
+                "source": "PHB",
+                "page": 201
+            }],
+            "entries": [
+                "Your songs are inspiration for your allies",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency with three Musical Instruments of your choice.",
+                        "As you finish a Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Musical Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.",
+                        "A character may have at most one point of Musical Inspiration, which is lost at the end of a Long Rest. Musical Inspiration does not occupy the character's Inspiration slot."
                     ]
                 }
             ]
@@ -1186,7 +1207,7 @@
                     "type": "list",
                     "items": [
                         "If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.",
-                        "You have a +3 bonus to your ({@skill Perception}) score."
+                        "You gain proficiency in ({@skill Perception}) or ({@skill Investigation}). If you already have proficiency in the chosen skill, you gain Expertise in it instead."
                     ]
                 }
             ]
@@ -1245,12 +1266,13 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you make a damage roll that deals poison damage, it ignores resistance to poison damage.",
-                        "You can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action.",
+                        "You gain proficiency with the {@item poisoner's kit|phb}",
                         "When attempting to craft a poison with your {@item poisoner's kit|phb}, if you fail, you may recover one token of any tier.",
-                        "You gain proficiency with the {@item poisoner's kit|phb} if you don't already have it. With one hour of work using a {@item poisoner's kit|phb} and expending 3 basic poison tokens, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take {@damage 3d6} poison damage and become {@condition poisoned} until the end of your next turn.",
-                        "By replacing a basic token with an advanced token you increase the poison DC by 1 and add 1 extra die of damage.",
-                        "By replacing a basic token with an ultimate token you increase the poison DC by 2, add 1 extra die of damage and increase the size of all damage dice added by this poison (for example, if you replace one basic poison token with an ultimate poison token, the poison adds 4d8 poison damage to the attack, replacing 2 tokens means the poison adds 5d10, and so on)."
+                        "You can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action.",
+                        "When you make a damage roll that with a poison you crafted, it ignores resistance to poison damage.",
+                        "With one hour of work using a {@item poisoner's kit|phb}, you can create a dose of makeshift poison. The poison has a delivery of your choice (inhaled, consumed or injury) The save DC of the poison is 8 + your Poisoner's kit proficiency bonus, and the poison deals {@damage 3d4} poison damage and applies the {@condition poisoned} for 1 round.",
+                        "The poison can be enhanced by using using Poison crafting tokens. You may use up to your Proficiency Bonus tokens when crafting a makeshift poison. Each basic token increases the damage of the poison by {@damage 1d4}.\n Each advanced token increases the damage of the poison by {@damage 1d4}, and increases the save DC of the poison by 1.\n Each ultimate token increases the damage of the poison by {@damage 2d4}, increases the save DC of the poison by 2, and increases the duration of the {@condition poisoned} condition by 1 round. ",
+                        "If at least 1 basic token was used, the damage die of the poison is d6, if at least 1 advanced token was used it is d8, and if at least 1 ultimate token was used, it is d10 instead"
                     ]
                 }
             ]
@@ -1381,7 +1403,7 @@
                         "Your attacks ignore resistance to bludgeoning damage",
                         "You gain proficiency with the smith's tools",
                         "When attempting to craft an item with your smith's tools, if you fail you may recover 1 crafting token of any tier",
-                        "You may use your smiths tools to enhance weapons. With one hour of work, you can enhance up to your proficiency bonus weapons, giving the weapon an extra 1d4 damage die. This effect persists untill a 1 is rolled on either the attack or on the damage die"
+                        "You may use your smiths tools to enhance weapons. With one hour of work, you can enhance up to your proficiency bonus weapons, giving the weapon an extra 1d4 damage die. This effect persists until a 1 is rolled on the extra damage die"
                     ]
                 }
             ]
@@ -1400,7 +1422,7 @@
                         "Firearms you are using have their misfire score reduced by 1, down to a minimum of 1",
                         "You gain proficiency with the tinker's tools",
                         "When attempting to craft an item with your tinker's tools, if you fail you may recover 1 crafting token of any tier",
-                        "With one hour of work using your tinker's tools you can create a makeshift explosive. The explosive is a thrown weapon that deals 1d6 damage in a 5ft diameter, and you may use up to  your proficiency bonus tokens to enhance it's effects. The save DC of the explosive is 10 + your tinker's tools proficiency bonus. On a successful Dexterity save the target recieves halved damage.\n Each basic token increases the damage by 1d6.\n Each advanced token increases the damage by 2d6 and adds an extra 5ft to the radius.\n Each ultimate token increases the damage by 3d6, adds an extra 5ft to the radius and increases the save DC by 1"
+                        "With one hour of work using your tinker's tools you can create a makeshift explosive. The explosive is a thrown weapon that deals 1d6 damage in a 5ft diameter, and you may use up to your proficiency bonus tokens to enhance it's effects. The save DC of the explosive is 10 + your tinker's tools proficiency bonus. On a successful Dexterity save the target recieves halved damage.\n Each basic token increases the damage by 1d6.\n Each advanced token increases the damage by 2d6 and adds an extra 5ft to the radius.\n Each ultimate token increases the damage by 3d6, adds an extra 5ft to the radius and increases the save DC by 1"
                     ]
                 }
             ]
@@ -2461,8 +2483,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain proficiency with the {@weapon net} and {@weapon trident}",
-                        "When you make a ranged attack with the {@weapon net} or {@weapon trident} against a target within 10ft of you and miss, you may immediately recover the thrown weapon.",
+                        "You gain proficiency with the {@item net} and {@item trident}",
+                        "When you make a ranged attack with the {@item net} or {@item trident} against a target within 10ft of you and miss, you may immediately recover the thrown weapon.",
                         "You gain a swimming speed equal to your walking speed.",
                         "You have advantage on {@skill athletics} and {@skill acrobatics} checks associated with water or ships."
                     ]
@@ -2525,7 +2547,7 @@
                 }
             }],
             "entries": [
-                "Keep a watchful eze on the card. Memorize it well. Pay no mind to your coin purse.",
+                "Keep a watchful eye on the card. Memorize it well. Pay no mind to your coin purse.",
                 {
                     "type": "list",
                     "items": [
@@ -2669,7 +2691,7 @@
             }
         },
         {
-            "name": "Rejuvination Pod",
+            "name": "Rejuvenation Pod",
             "source": "RBMM",
             "level": 2,
             "school": "T",
